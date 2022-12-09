@@ -1,14 +1,14 @@
 Primatives For Unity
 ===
 
-##Description
+## Description
 Primatives is a lightweight package for Unity that adds additional privative shapes to the 3D editor menu beyond just Capsule, Sphere, Box, and Cylinder.
 Primatives supports **Built-in**, **URP**, and **HDRP** render pipelines and will automatically find the correct default material to apply to the created model.
 
-##Installation
+## Installation
 XXXXXX
 
-##Shapes Included
+## Shapes Included
 The Following Shapes are included in the package:
 * XXXXX
 * XXXXX
@@ -17,5 +17,5 @@ The Following Shapes are included in the package:
 * XXXXX
 * XXXXX
 
-##Usage
+## Usage
 XXXXX
