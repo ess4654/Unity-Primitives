@@ -1,0 +1,16 @@
+{
+  "name": "com.techskullstudios.primatives",
+  "version": "0.1.0",
+  "displayName": "Tech Skull Studios Primatives",
+  "description": "Primatives is a lightweight package for Unity that adds additional privative shapes to the 3D editor menu beyond just Capsule, Sphere, Box, and Cylinder.",
+  "unity": "2020.1",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Tech Skull Studios",
+    "email": "pocketbuggames@gmail.com",
+    "url": "https://techskullgames.weebly.com/"
+  },
+  "samples": [
+  ]
+}
