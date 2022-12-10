@@ -10,6 +10,7 @@
 
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 
 internal static class Primitives
@@ -21,9 +22,12 @@ internal static class Primitives
     
     private static void CreateShape(string shape, bool isConvex)
     {
+        var selected =  Selection.activeGameObject;
         //Create the blank object
         var meshFilter = CreateGameObject<MeshFilter>(shape);
-        meshFilter.transform.position = Vector3.zero;
+        if(selected && !string.IsNullOrWhiteSpace(selected.scene.name))
+            meshFilter.transform.SetParent(selected.transform); //parent to currently selected object
+        meshFilter.transform.localPosition = Vector3.zero;
         meshFilter.gameObject.AddComponent<MeshRenderer>();
         var meshRenderer = meshFilter.GetComponent<MeshRenderer>();
         meshFilter.gameObject.AddComponent<MeshCollider>();
@@ -71,6 +75,9 @@ internal static class Primitives
     [MenuItem(Path + "Open Box")]
     static void CreateOpenBox() => CreateShape("Open Box", false);
 
+    [MenuItem(Path + "Stair")]
+    static void CreateStair() => CreateShape("Stair", false);
+
     [MenuItem(Path + "Tube")]
     static void CreateTube() => CreateShape("Tube", false);
 
@@ -88,6 +95,9 @@ internal static class Primitives
     
     [MenuItem(Path + "Octahedron")]
     static void CreateOctahedron() => CreateShape("Octahedron", true);
+    
+    [MenuItem(Path + "Icosahedron")]
+    static void CreateIcosahedron() => CreateShape("Icosahedron", true);
 }
 
 #endif
