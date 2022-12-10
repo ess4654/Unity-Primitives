@@ -1,6 +1,6 @@
 {
   "name": "com.techskullstudios.primitives",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Tech Skull Studios Primitives",
   "description": "Primitives is a lightweight package for Unity that adds additional primitive shapes to the 3D editor menu beyond just Capsule, Sphere, Box, and Cylinder.",
   "unity": "2018.3",
